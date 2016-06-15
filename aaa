@@ -1,0 +1,123 @@
+     <script src="<?php echo base_url(); ?>assets_admin/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+
+<?php include('include/header.php'); ?>
+<?php include('include/sidebar.php') ; ?>
+
+<script src='<?php echo base_url()?>vendors/ckeditor/ckeditor.js'></script>
+<script src='<?php echo base_url()?>vendors/ckeditor/adapters/jquery.js'></script>
+
+<script type="text/javascript">
+
+   $(function() {
+        // CKEditor Standard
+        $('textarea.ckeditor_standard').ckeditor({
+            height: '150px',
+            width:'500px',
+            toolbar: [
+                {name: 'document', items: ['Source', '-', 'NewPage', 'Preview', '-', 'Templates']}, // Defines toolbar group with name (used to create voice label) and items in 3 subgroups.
+                ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'], // Defines toolbar group without name.
+                {name: 'basicstyles', items: ['Bold', 'Italic']}
+            ]
+        });
+    });
+  
+
+</script>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+    CMS List
+    </h1>
+    <ol class="breadcrumb">
+      <li>
+        <a href="#">
+          <i class="fa fa-dashboard">
+          </i> Home
+        </a>
+      </li>
+      <li>
+        <a href="#">CMS
+        </a>
+      </li>
+    </ol>
+  </section>
+  <!-- Main content -->
+  <section class="content">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="box">
+          <div class="box-header">
+            
+          </div>
+          <!-- /.box-header -->
+         
+    <div class="box-body" style="height:400px">
+
+
+      <form id="signupForm" method="post"  action="<?php echo site_url('developer/developer_detail/'); ?>" enctype="multipart/form-data">
+    <div class="col-md-12" id="firstStep" class="firstStep">
+    
+       
+<input type="text" name="userid" value="<?php //echo $user_id;?>" hidden>
+
+    <legend style="font-size:15px; color:#3b5999; font-weight:700">Developer Details » <small style="font-size:11px"> Use the below panel to enter relevant details about developer(fields marked with * are all mandatory).</small></legend>
+
+
+        
+        <div class="col-xs-6 form-group">
+            <label id="label">Overview: *</label>
+          <textarea class="ckeditor_standard" required  name="dev_overview" id="dev_overview">
+            <?php  echo set_value('dev_overview');?></textarea><?php echo form_error('dev_overview', '<div class="error" style="color:red;">', '</div>');?>
+        </div>
+
+   
+                
+        
+        
+
+<div align="center" >
+         <button type="submit" id="firstBtn" class="btn btn-primary firstBtn">Submit</button>
+</div>
+
+
+</form>
+
+
+            
+
+
+          </div>
+          <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col -->
+    </div>
+    <!-- /.row -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<?php include('include/footer.php'); ?>
+
+<script type="text/javascript">
+
+   
+  
+</script>  
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+       $("#example").dataTable();
+
+    });
+
+
+
+</script>

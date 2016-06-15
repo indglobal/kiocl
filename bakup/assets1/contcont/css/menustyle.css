@@ -1,0 +1,48 @@
+.pd0 { padding: 0px; }
+.menuClassNew{ background-image: none; border: none; box-shadow: none; font-family: roboto-regular;}
+.menuClassNew .navbar-nav > .open > a, .menuClassNew .navbar-nav > .active > a{
+	background-image: none; box-shadow: none;}
+.blue-text { color: #1551bd; }
+
+.header-block { min-height: 100px; border-bottom: 5px solid #f29b10; font-family: roboto-regular; -webkit-transition: 0.3s; -moz-transition: 0.3s; -ms-transition: 0.3s; transition: 0.3s; }
+
+.top-header .list-inline li { padding: 0px; }
+.top-header .list-inline li a { color: #777; border-right: 1px solid #777; padding: 0 7px; font-size: 10px; }
+.top-header .list-inline li:last-child a { border: none; }
+
+.bot-header .logo { margin-top: -30px; }
+@media (max-width: 768px) { .bot-header .logo { margin-top: 0px; float: left; } }
+.bot-header .logo img { width: 150px; -webkit-transition: 0.2s; -moz-transition: 0.2s; -ms-transition: 0.2s; transition: 0.2s; }
+@media (max-width: 768px) { .bot-header .logo img { width: 60px; } }
+.bot-header .dropdown { padding-right: 25px; }
+.bot-header .dropdown-menu { position: inherit; min-width: inherit; padding: 5px 0; margin: 2px 0 0; background-color: transparent; border: none; border-radius: 0px; box-shadow: none; }
+.bot-header .dropdown-menu > li > a { padding: 1px 0px; font-size: 11px; color: #777; }
+.bot-header .dropdown-menu > li > a.blue-text { color: #1551bd; text-decoration: underline; }
+@media (min-width: 768px) { .bot-header .nav > li > a { padding: 0px; } }
+.bot-header .navbar { margin-bottom: 0px; border: none; }
+.bot-header .navbar .container-fluid { padding-left: 0; padding-right: 0; }
+@media (min-width: 768px) { .bot-header .navbar-collapse { padding-left: 0; padding-right: 0; width: auto; } }
+.bot-header .navbar-nav > li > a { padding-top: 0px; padding-bottom: 0px; }
+@media (min-width: 768px) { .bot-header > li > a { padding-top: 0; padding-bottom: 0; } }
+.bot-header .navbar-default { background-color: transparent; }
+.bot-header .navbar-default .navbar-nav > li > a { color: #000; font-size: 12px; font-weight: bold; }
+.bot-header .navbar-default .navbar-nav > .open > a { background-color: transparent; }
+
+@media (min-width: 768px) { .sticky-header { position: fixed; top: 0; height: 70px; z-index: 999999; background-color: #fff; width: 100%; min-height: inherit; }
+  .sticky-header .bot-header .logo img { width: 60px; }
+  .sticky-header .bot-header .MenuHidden { display: none; }
+  .sticky-header .bot-header .stickHeader{display: inline-block;}
+}
+.banner-block { position: relative; }
+.banner-block img { width: 100%; }
+@media (min-width: 768px) { .banner-block img { height: 450px; } }
+
+.reg-form {  position: absolute; top: 188px; right: 500px;color: #fff; }
+.plot-search{ position: absolute;top: 20%;right: 30%;color: #fff;width: 43.8%;margin: 0 auto;}
+.plot-search .head-reg { color: #1551bd; font-size: 20px; }
+.plot-search .form-control { background-color: #ebebeb; }
+@media (max-width: 768px) { .plot-search { width: 100%; position: fixed; top: 0; right: 0; z-index: 9; display: none; } }
+
+.btn-reg { background: #f29b10; color: #fff; font-size: 13px; font-weight: bold; border-radius: 0px; }
+
+#reg-open { position: absolute; right: 10px; bottom: 10px; }

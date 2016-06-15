@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://localhost/bookmyplot_complete/latestproject.php -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Book My Plot</title>
+	<!-- Bootstrap css links -->
+	<link href="./Book My Plot_files/bootstrap.css" rel="stylesheet">
+	<link href="./Book My Plot_files/bootstrap-theme.css" rel="stylesheet">
+	<!-- font-awesome css links -->
+	<link rel="stylesheet" type="text/css" href="./Book My Plot_files/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./Book My Plot_files/style.css">
+	<link rel="stylesheet" type="text/css" href="./Book My Plot_files/jquery.material.form.css">
+	<!-- Add fancyBox main JS and CSS files -->
+	<link rel="stylesheet" type="text/css" href="./Book My Plot_files/jquery.fancybox.css" media="screen">
+
+	<style>
+		
+		/* these styles are for the demo, but are not required for the plugin */
+		.zoom {
+			display:inline-block;
+			position: relative;
+		}
+		
+		/* magnifying glass icon */
+		.zoom:after {
+			content:'';
+			display:block; 
+			width:33px; 
+			height:33px; 
+			position:absolute; 
+			top:0;
+			right:0;
+			background:url(icon.png);
+		}
+
+		.zoom img {
+			display: block;
+		}
+
+		.zoom img::selection { background-color: transparent; }
+
+		#ex2 img:hover { cursor: url(grab.cur), default; }
+		#ex2 img:active { cursor: url(grabbed.cur), default; }
+
+		.LoanApproval{padding-top: 3%;margin-top: 3%;border-top: 1px solid #ccc;}
+		.OtherApproval{padding-top: 3%;margin-top: 3%;border-top: 1px solid #ccc;}
+		.BannerText img {margin-top: -21%;}
+		.viewAllProjects {margin-top: 17%;padding-bottom: 5%;}
+	</style>
+
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+<body><div style="position:fixed;top:0px;left:0px;width:0;height:0;" id="scrollzipPoint"></div>
+
+
+<!-- header starts here -->
+	<!-- menu starts here -->
+	<div class="container-fluid StikyHeader">
+		<div class="container">
+			<div class="TopHeader1 paddigTop">
+				<div class="row">
+					<div class="col-md-3" style="padding:0">
+						<div class="logo">
+							<a href="http://localhost/bookmyplot_complete/index.php"><img src="./Book My Plot_files/logo.png" alt="logo"></a>
+						</div>
+					</div>
+					<div class="col-md-6" style="padding:0">
+						<select class="form-control locality">
+						  <option>Select preffered locality</option>
+						  <option>Mumbai</option>
+						  <option>Bangalore</option>
+						  <option>Pune</option>
+						  <option>Belgaum</option>
+						</select>
+						<label class="localityText">Budget</label>
+						<select class="form-control localityMin">
+						  <option>Min</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+						</select>
+						<select class="form-control localityMin">
+						  <option>Max</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+						</select>
+						<button class="btn btn-Search glyphicon glyphicon-th-large"> Search</button>
+					</div>
+					<div class="col-md-3" style="padding:0">
+						<select class="form-control City">
+						  <option>Select City</option>
+						  <option>Bangalore</option>
+						  <option>Pune</option>
+						  <option>Chennai</option>
+						  <option>Mumbai</option>
+						</select>
+						<div class="SmallRightdiv">
+							<button class="btn btn-login_Signup" data-toggle="modal" data-target="#myModal">Login / SignUp</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- menu ends here -->
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="myModalLabel">LOGIN</h4>
+      </div>
+      <div class="modal-body">
+        <form class="material">
+            <div class="form-group">
+              
+              <div class="material-input input"><input type="email" class="form-control Login-control" id="exampleInputEmail1"><span class="material-bar"></span><label for="undefined">Email</label></div>
+            </div>
+            <div class="form-group">
+              
+              <div class="material-input input"><input type="password" class="form-control Login-control" id="exampleInputPassword1"><span class="material-bar"></span><label for="undefined">Password</label></div>
+            </div>
+           
+            <button type="submit" class="btn btn-Logincontrol">Submit</button>
+            Or <a href="javascript:void(0)" data-dismiss="modal" data-toggle="modal" data-target="#myModal1">Create an Account</a>
+        </form>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="myModal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-sm" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="myModalLabel">SIGNUP</h4>
+      </div>
+      <div class="modal-body">
+        <form class="material">
+            <div class="form-group">
+              <div class="material-input input"><input type="text" class="form-control Login-control" id="exampleInputEmail1"><span class="material-bar"></span><label for="undefined">Name</label></div>
+            </div>
+            <div class="form-group">
+              
+              <div class="material-input input"><input type="text" class="form-control Login-control" id="exampleInputEmail1"><span class="material-bar"></span><label for="undefined">Phone Number</label></div>
+            </div>
+            <div class="form-group">
+              
+              <div class="material-input input"><input type="email" class="form-control Login-control" id="exampleInputEmail1"><span class="material-bar"></span><label for="undefined">Email</label></div>
+            </div>
+            <div class="form-group">
+              
+              <div class="material-input input"><input type="password" class="form-control Login-control" id="exampleInputPassword1"><span class="material-bar"></span><label for="undefined">Password</label></div>
+            </div>
+           
+            <button type="submit" class="btn btn-Logincontrol">Submit</button>
+            <a href="javascript:void(0)" data-dismiss="modal" data-toggle="modal" data-target="#myModal">Already SignUp Go to Login</a>
+        </form>
+      </div>
+     <!--  <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- header ends here -->
+
+<!--First Section Starts here-->
+	<div class="FirstMainSection">
+			<div class="container">
+				<ol class="breadcrumb">
+				  	<li><a href="http://localhost/bookmyplot_complete/latestproject.php#">Home</a></li>
+				  	<li><a href="http://localhost/bookmyplot_complete/latestproject.php#">East Bangalore</a></li>
+				  	<li><a href="http://localhost/bookmyplot_complete/latestproject.php#">Residential Plots</a></li>
+				  	<li><a href="http://localhost/bookmyplot_complete/latestproject.php#">BSR Developers</a></li>
+				  	<li class="active">Green Woods</li>
+				</ol>
+			</div>
+			<div class="BannerText1">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 BannerText">
+							<img src="./Book My Plot_files/bmrda.png" class="img-responsive">
+							<br><br><br>
+							<h2>Aakruthi Green Woods <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></h2>
+							<h4>East Bangalore, Near Jigani, Bangalore.</h4>
+							<span class="badge BSR">Developer : BSR Developer</span>
+						</div>
+						<div class="col-md-3 text-center groupplots">
+							<div class="Innerplots">
+								<h4>200 PLOTS ON GROUP PURCHASE DEAL</h4>
+							</div>
+							<div class="Innerplots">
+								<h1>100+</h1>
+								<h4>BOOKED</h4>
+							</div>
+							<div class="Innerplots">
+								<h1>90+</h1>
+								<h4>AVAILABLE</h4>
+							</div>
+							<button class="btn btn-viewplot">VIEW PLOTS</button>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="propertyMenu">
+				<div class="container">
+					<div class="OverviewMenu">
+						<div class="row">
+						<!-- Nav tabs -->
+						  <ul class="nav nav-tabs col-md-9" style="padding-left:2%;" role="tablist">
+						    <li role="presentation" class=""><a href="http://localhost/bookmyplot_complete/latestproject.php#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="false">OVERVIEW</a></li>
+						    <li role="presentation"><a href="http://localhost/bookmyplot_complete/latestproject.php#gallery" aria-controls="profile" role="tab" data-toggle="tab">GALLERY</a></li>
+						    <li role="presentation"><a href="http://localhost/bookmyplot_complete/latestproject.php#plots" aria-controls="messages" role="tab" data-toggle="tab">PLOTS</a></li>
+						    <li role="presentation"><a href="http://localhost/bookmyplot_complete/latestproject.php#amenities" aria-controls="messages" role="tab" data-toggle="tab">AMENITIES</a></li>
+						    <li role="presentation"><a href="http://localhost/bookmyplot_complete/latestproject.php#about" aria-controls="settings" role="tab" data-toggle="tab">ABOUT BUILDER</a></li>
+						    <li role="presentation" class="active"><a href="http://localhost/bookmyplot_complete/latestproject.php#interestedpeople" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="true">INTERESTED PEOPLE</a></li>
+						    <li role="presentation"><a href="http://localhost/bookmyplot_complete/latestproject.php#location" aria-controls="messages" role="tab" data-toggle="tab">LOCATION MAP</a></li>
+						    <li role="presentation"><a href="http://localhost/bookmyplot_complete/latestproject.php#reviews" aria-controls="settings" role="tab" data-toggle="tab">REVIEWS</a></li>
+						  </ul>
+						  <div class="col-md-3 StartFrmsmalldiv text-center">
+						  	<p>Starts from</p>
+						  	<h2><i class="fa fa-inr"></i> 33.0 Lacs <small><i class="fa fa-inr"></i> 1750/Sqft</small></h2>
+						  </div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+	</div>
+	
+<!--First Section ends here-->
+<!-- <div> -->
+
+
+<!--Second Section start here-->
+	<div class="MiddleSection">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-9"><!--LeftSection starts here-->
+					<!-- Tab panes -->
+					<div class="JoinNow text-center">
+										<img src="./Book My Plot_files/join-us.png" align="middle" alt="join">
+									</div>
+						  <div class="tab-content">
+						    <div role="tabpanel" class="tab-pane" id="home">
+								<div class="LeftSection"><!--LeftSection Image starts here-->						 
+									
+									<div class="PropertyContent"><!--PropertyContent starts here-->
+										<div class="propertyTitle">
+											<h3>PROPERTY OVERVIEW</h3>
+										</div>
+										<p>Sprawling over 100 acres, Green County is a spacious, lush green new development brought to you by Highlife constructions. Green County has excellent recreational and leisure facilities and comes equipped with all the basic amenities and utilities needed for a comfortable lifestyle, as well as round the clock security facilities. 
+										A highly accessible location, with connections via several ring roads, a highway and several rail lines.</p>
+										<div class="PropertyUlli">
+											<ul>
+												<li>Utilities: Box type drainage, Sewage system, Electricity, Over head water tank,Water connection to every plot.</li>
+												<li>Recreational and leisure facilities.</li>
+												<li>24 hours security &amp; Compound wall for entire township.</li>
+												<li>International school.</li>
+												<li>Easy accesibility via road and public transport.</li>
+												<li>Approval Type: DTCP.</li>
+											</ul>
+										</div>
+										<div class="PlotsAvailable"><!--PlotsAvailable starts here-->
+											<div class="row">
+												<center>
+												<ul class="text-center">
+														
+														<li class="col-md-3 col-md-offset-1 col-sm-2 col-xs-2 text-center">
+															<div class="InnerPlotsAvailable commplots">
+																<h2>80</h2>
+															</div>
+															<h5>PLOTS AVAILABLE</h5>
+														</li>
+														<li class="col-md-3 col-md-offset-1 col-xs-2 text-center">
+															<div class="InnerPlotsRange commplots">
+																<h4>1.2K-3.4K</h4>
+															</div>
+															<h5>PLOTS RANGE</h5>
+														</li>
+														<li class="col-md-3 col-md-offset-1 col-xs-2 text-center">
+															<div class="InnerCompletedate commplots">
+																<h2>48</h2>
+															</div>
+															<h5>PLOTS BOOKED</h5>
+														</li>
+														
+												</ul>
+												</center>
+											</div>
+										</div><!--PlotsAvailable ends here-->
+										<div class="LoanApproval"><!--LoanApproval starts here-->
+											<div class="row">
+												<h4>LOAN APPROVAL</h4>
+												<center>
+												<ul class="text-center">
+														
+														<li class="col-md-4 col-sm-2 col-xs-2 text-center">
+															
+																<img src="./Book My Plot_files/punjab_national_bank.jpg">
+															
+															
+														</li>
+														<li class="col-md-4 col-xs-2 text-center">
+															
+																<img src="./Book My Plot_files/axis_bank.jpg">
+															
+															
+														</li>
+														<li class="col-md-4 col-xs-2 text-center">
+															<img src="./Book My Plot_files/lic.jpg">
+															
+														</li>
+														
+												</ul>
+												</center>
+											</div>
+										</div><!--LoanApproval ends here-->
+										<div class="OtherApproval"><!--OtherApproval starts here-->
+											<div class="row">
+												<h4>OTHER APPROVAL</h4>
+
+												<center>
+												<ul class="text-center">
+														
+														<li class="col-md-4 col-sm-2 col-xs-2 text-center">
+															<img src="./Book My Plot_files/bmrda.png">
+															
+														</li>
+														
+														
+												</ul>
+												</center>
+											</div>
+										</div><!--OtherApproval ends here-->
+										
+									</div><!--PropertyContent ends here-->
+									
+								</div> <!--LeftSection Image ends here-->
+							
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="gallery"><!--TabTwo starts here-->
+								<div class="photoGallery PropertyContent">
+									<div class="propertyaboutTitle">
+										<h3>GALLERY</h3>
+									</div>
+									<div class="PhotoGalleryTitle">
+										<h3>Photos</h3>
+										<center>
+											<p>
+												<a class="fancybox" href="http://localhost/bookmyplot_complete/images/1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="./Book My Plot_files/1_s.jpg" alt=""></a>
+
+												<a class="fancybox" href="http://localhost/bookmyplot_complete/images/2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="./Book My Plot_files/2_s.jpg" alt=""></a>
+
+												<a class="fancybox" href="http://localhost/bookmyplot_complete/images/3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="./Book My Plot_files/3_s.jpg" alt=""></a>
+
+												<a class="fancybox" href="http://localhost/bookmyplot_complete/images/4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="./Book My Plot_files/4_s.jpg" alt=""></a>
+												
+												<a class="fancybox" href="http://localhost/bookmyplot_complete/images/1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="./Book My Plot_files/1_s.jpg" alt=""></a>
+
+												<a class="fancybox" href="http://localhost/bookmyplot_complete/images/2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="./Book My Plot_files/2_s.jpg" alt=""></a>
+
+												<a class="fancybox" href="http://localhost/bookmyplot_complete/images/3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="./Book My Plot_files/3_s.jpg" alt=""></a>
+
+												<a class="fancybox" href="http://localhost/bookmyplot_complete/images/4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="./Book My Plot_files/4_s.jpg" alt=""></a>
+											
+											</p>
+										</center>
+										<h3>Video</h3>
+										<center>
+											<iframe width="88%" height="350" src="./Book My Plot_files/WRk_eIdjUp8.html" frameborder="0" allowfullscreen=""></iframe>
+										</center>
+									</div>
+								</div>
+
+						    </div><!--TabTwo ends here-->
+
+						    <div role="tabpanel" class="tab-pane" id="plots"><!--TabThree starts here-->
+								<div class="MainlayoutTab PropertyContent">
+									<div class="propertyaboutTitle">
+											<h3>PLOT DETAILS</h3>
+										</div>
+									<span class="zoom" id="ex1" style="position: relative; overflow: hidden;">
+										<img src="./Book My Plot_files/layoutmap.jpg" width="100%" height="900" alt="Daisy on the Ohoopee">
+										<!-- <p>Hover</p> -->
+									<img src="./Book My Plot_files/layoutmap.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 1098px; height: 1326px; border: none; max-width: none; max-height: none;"></span>
+								</div>
+
+						    </div><!--TabThree starts here-->
+							
+
+							<div role="tabpanel" class="tab-pane" id="amenities"><!--TabFour starts here-->
+								<div class="MainlayoutTab PropertyContent">
+									<div class="propertyaboutTitle">
+										<h3>AMENITIES</h3>
+									</div>
+									<div class="AmenitiesSmallIcon text-center">
+										<div class="row">
+											<ul>
+												<li class="col-sm-3 ">
+													<img src="./Book My Plot_files/w1.png">
+													<p>A Magnificent swimming pool</p>
+												</li>
+												<li class="col-sm-3">
+													<img src="./Book My Plot_files/w2.png">
+													<p>Indoor games room</p>
+												</li>
+												<li class="col-sm-3">
+													<img src="./Book My Plot_files/w3.png">
+													<p>A well equipped gymnasium</p>
+												</li>
+												<li class="col-sm-3">
+													<img src="./Book My Plot_files/w4.png">
+													<p>A well equipped gymnasium</p>
+												</li>
+												<li class="col-sm-3 ">
+													<img src="./Book My Plot_files/w5.png">
+													<p>Badminton Court</p>
+												</li>
+												<li class="col-sm-3">
+													<img src="./Book My Plot_files/w6.png">
+													<p>Jogging Track</p>
+												</li>
+												<li class="col-sm-3">
+													<img src="./Book My Plot_files/w7.png">
+													<p>Guest Room</p>
+												</li>
+												<li class="col-sm-3">
+													<img src="./Book My Plot_files/w8.png">
+													<p>Steam &amp; Sauna Bath</p>
+												</li>
+												<li class="col-sm-3 ">
+													<img src="./Book My Plot_files/w9.png">
+													<p>Service Room</p>
+												</li>
+												<li class="col-sm-3">
+													<img src="./Book My Plot_files/w10.png">
+													<p>Back Office</p>
+												</li>
+												<li class="col-sm-3">
+													<img src="./Book My Plot_files/w11.png">
+													<p>Records Room</p>
+												</li>
+												<li class="col-sm-3">
+													<img src="./Book My Plot_files/w12.png">
+													<p>Maintance Room</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								
+
+						    </div><!--TabFour ends here-->
+
+						    <div role="tabpanel" class="tab-pane" id="about"><!--TabFive starts here-->
+						    	<div class="MainAboutTab PropertyContent">
+						    		<div class="propertyaboutTitle">
+										<h3>ABOUT BUILDER</h3>
+									</div>
+									<div class="AboutMiddleSection">
+										<div class="row">
+											<div class="col-md-4 text-center">
+												<img src="./Book My Plot_files/builderlogo.jpg">
+											</div>
+											<div class="col-md-8 AboutMiddleText">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											</div>
+										</div>
+									</div>
+									<center>
+							    		<div class="OngoingProjects">
+							    			<ul>
+							    				<li>
+													<div class="section half-left text-center">
+												        <h2><div class="numscroller numscroller-big-bottom scrollzip roller-title-number-1" data-slno="1" data-min="0" data-max="40" data-delay="10" data-increment="9"><h2>0</h2></div></h2>
+												    	<h4>ONGOING PROJECTS</h4>
+												    </div>
+							    				</li>
+							    				<li class="Middlerightleftborder">
+							    					<div class="section half-right text-center">
+												        <h2><div class="numscroller numscroller-big-bottom roller-title-number-2 scrollzip" data-slno="2" data-min="0" data-max="150" data-delay="10" data-increment="9"><h2>0</h2></div></h2>
+												    	<h4>UPCOMING PROJECT</h4>
+												    </div>
+							    				</li>
+							    				<li>
+							    					<div class="section half-right text-center">
+												        <h2><div class="numscroller numscroller-big-bottom roller-title-number-3 scrollzip" data-slno="3" data-min="0" data-max="250" data-delay="10" data-increment="9"><h2>0</h2></div></h2>
+												    	<h4>COMPLETED PROJECT</h4>
+												    </div>
+							    				</li>
+							    			</ul>											    
+										</div>
+									</center>
+									<center>
+										<div class="viewAllProjects">
+											<a href="javascript:void(0);">View all BSR Developers property listing</a>
+										</div>
+									</center>
+								</div>
+						    </div><!--TabFive ends here-->
+						     <div role="tabpanel" class="tab-pane active" id="interestedpeople">
+								<div class="Maininterestedtab PropertyContent">
+									<div class="propertyaboutTitle">
+										<h3>INTERESTED PEOPLE</h3>
+									</div>
+									<div class="Innerinterestedpeople">
+										<ul>
+											<li>
+												<div class="InnerpeopleImg">
+													<img src="./Book My Plot_files/ajaykumar.png">
+												</div>
+												<h4>Dr.Ajaykumar</h4>
+												<p>Manager at Infosys Bangalore</p>
+											</li>
+											<li>
+												<div class="InnerpeopleImg1">
+													<img src="./Book My Plot_files/neena.png">
+												</div>
+												<h4>Dr.Neenu Pahuja</h4>
+												<p>Manager at Infosys Bangalore</p>
+											</li>
+											<li>
+												<div class="InnerpeopleImg2">
+													<img src="./Book My Plot_files/manjula.png">
+												</div>
+												<h4>Ms. Manjula Vinjamuri</h4>
+												<p>Manager at Infosys Bangalore</p>
+											</li>
+											<li>
+												<div class="InnerpeopleImg3">
+													<img src="./Book My Plot_files/mohan.png">
+												</div>
+												<h4>Mr. Mohan Reddy</h4>
+												<p>Manager at Infosys Bangalore</p>
+											</li>
+											<li>
+												<div class="InnerpeopleImg">
+													<img src="./Book My Plot_files/chandra.png">
+												</div>
+												<h4>Mr.R. Chandrashekhar</h4>
+												<p>Manager at Infosys Bangalore</p>
+											</li>
+											<li>
+												<div class="InnerpeopleImg1">
+													<img src="./Book My Plot_files/manu.png">
+												</div>
+												<h4>Manu Parpia</h4>
+												<p>Manager at Infosys Bangalore</p>
+											</li>
+											<li>
+												<div class="InnerpeopleImg2">
+													<img src="./Book My Plot_files/sanjay.png">
+												</div>
+												<h4>Mr. Sanjay Poddar</h4>
+												<p>Manager at Infosys Bangalore</p>
+											</li>
+											<li>
+												<div class="InnerpeopleImg3">
+													<img src="./Book My Plot_files/harish.png">
+												</div>
+												<h4>Mr. Harish Krishnan</h4>
+												<p>Manager at Infosys Bangalore</p>
+											</li>
+											<li>
+												<div class="InnerpeopleImg5">
+													<img src="./Book My Plot_files/you.png">
+												</div>
+												<h4>YOU</h4>
+											</li>
+											
+										</ul>
+									</div>
+								</div>
+						     </div>
+
+						    <div role="tabpanel" class="tab-pane" id="location">
+						   		<div class="locationmaps">
+									<iframe src="./Book My Plot_files/embed.html" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+								</div>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="reviews">...</div>
+						  </div>
+
+					
+				</div><!--LeftSection ends here-->
+
+				<div class="col-md-3"><!--RightSection Starts here-->
+					<div class="RightSection">
+						<center>
+							<h4>Group Purchase will save you </h4>
+							<h3>big!</h3>
+							<h3>Are you interested ?</h3>
+							<form action="http://localhost/bookmyplot_complete/latestproject.php#" method="post">
+								<div class="form-group">
+							    	<!-- <label for="exampleInputEmail1">Email address</label> -->
+							    	<input type="text" class="form-control" id="exampleInputFname" placeholder="Fname">
+							  	</div>
+							  	<div class="form-group">
+							    	<!-- <label for="exampleInputEmail1">Email address</label> -->
+							    	<input type="text" class="form-control" id="exampleInputLname" placeholder="Lname">
+							  	</div>
+							  	<div class="form-group">
+							    	<!-- <label for="exampleInputEmail1">Email address</label> -->
+							    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+							  	</div>
+							  	<div class="form-group">
+							    	<!-- <label for="exampleInputPassword1">Password</label> -->
+							    	<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone">
+							  	</div>
+							  	<div class="squaredThree text-left">
+									<input type="checkbox" value="None" id="squaredThree" name="check">
+									<label for="squaredThree"></label>
+								</div>
+
+							  	<button type="submit" class="btn btn-Rightbutton">I am interested</button>
+							  	<h4>For smart people smart savings</h4>
+							</form>
+							
+						</center>
+					</div>
+					<div class="RightSectionSecondPart">
+						<img src="./Book My Plot_files/Know-more.jpg" class="img-responsive"> 
+						 <!--<div class="RightBgColor">
+
+
+							<div class="GreenRightText">
+								<h4>Green Woods Community People</h4>
+							</div>
+
+							<div class="UserProfileListing">
+								<div class="row">
+									<div class="col-sm-2 RoundImg">
+										<img src="images/round.png" alt="round">
+									</div>
+									<div class="col-sm-9 col-sm-offset-1">
+										<h4>Sanjay Balkrishnan</h4>
+										<p>Manager at Infosys Bangalore</p>
+									</div>
+								</div>	
+							</div>
+							<div class="UserProfileListing">
+								<div class="row">
+									<div class="col-sm-2 RoundImg">
+										<img src="images/round.png" alt="round">
+									</div>
+									<div class="col-sm-9 col-sm-offset-1">
+										<h4>Sanjay Balkrishnan</h4>
+										<p>Manager at Infosys Bangalore</p>
+									</div>
+								</div>	
+							</div>
+							<div class="UserProfileListing">
+								<div class="row">
+									<div class="col-sm-2 RoundImg">
+										<img src="images/round.png" alt="round">
+									</div>
+									<div class="col-sm-9 col-sm-offset-1">
+										<h4>Sanjay Balkrishnan</h4>
+										<p>Manager at Infosys Bangalore</p>
+									</div>
+								</div>	
+							</div>
+							<div class="UserProfileListing">
+								<div class="row">
+									<div class="col-sm-2 RoundImg">
+										<img src="images/round.png" alt="round">
+									</div>
+									<div class="col-sm-9 col-sm-offset-1">
+										<h4>Sanjay Balkrishnan</h4>
+										<p>Manager at Infosys Bangalore</p>
+									</div>
+								</div>	
+							</div>
+
+						</div>--> 
+
+					</div>
+				</div><!--RightSection ends here-->
+			</div>
+		</div>
+	</div>
+<!--Second Section ends here-->
+
+<!-- footer starts here -->
+	<!-- footer starts here -->
+	<div class="FooterSection">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="FooterText text-justify">
+						<h4>About Bookmyplots</h4>
+						<p>We use data intelligence to help buyers discover and evaluate the most relevant plot projects and land parcels, assist sellers showcase and offer the best deals, and enable agents bridge the gap between buyers and sellers in the most effective way.</p>
+						<p>The Plots and Land ecosystem aims to replace existing information asymmetry </p>
+					</div>
+				</div>
+				<div class="col-md-3 borderLeftRight">
+					<div class="FooterText">
+						<h4>Popular Searches</h4>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="FooterSecondText">
+									<ul>
+										<li>Kormangala</li>
+										<li>Kankpura Road</li>
+										<li>Mysore Off Road</li>
+										<li>Dodd Aladmara</li>
+										<li>Doddballarpura</li>
+										<li></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="FooterSecondText">
+									<ul>
+										<li>Kormangala</li>
+										<li>Kankpura Road</li>
+										<li>Mysore Off Road</li>
+										<li>Dodd Aladmara</li>
+										<li>Doddballarpura</li>
+										<li></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="FooterText"><!--FooterText starts here-->
+						<h4>Quick Links</h4>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="FooterSecondText">
+									<ul>
+										<li>About Us</li>
+										<li>Contact Us</li>
+										<li>Careers</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="FooterSecondText">
+									<ul>
+										<li>Help</li>
+										<li>Advertise With Us</li>
+										<li>Blog</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!--FooterText ends here-->
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="FooterSection FooterSecondSection">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h5>Copyright © 2015 www.bookmyplot.com</h5>
+				</div>
+				<div class="col-md-4">
+					<h5>Designed by - www.indglobal.in</h5>
+				</div>
+				<div class="col-md-4">
+					<div class="FooterLastulli">
+						<ul>
+							<li>Listing Policy </li>
+							<li>Terms of Use</li>
+							<li>Privacy Policy</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- footer ends here --><!-- footer ends here-->
+
+	<!-- jquery library js link -->
+	<script type="text/javascript" src="./Book My Plot_files/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap library js links -->
+	<script type="text/javascript" src="./Book My Plot_files/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="./Book My Plot_files/jquery.fancybox.js"></script>
+	<!-- label js links -->
+	<script type="text/javascript" src="./Book My Plot_files/jquery.material.form.js"></script>
+	<script src="./Book My Plot_files/numscroller-1.0.js"></script>
+    <script src="./Book My Plot_files/jquery.zoom.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#ex1').zoom();
+			$('#ex2').zoom({ on:'grab' });
+			$('#ex3').zoom({ on:'click' });			 
+			$('#ex4').zoom({ on:'toggle' });
+		});
+	</script>
+	
+	<script type="text/javascript">
+		$('.galleryContent').hide();
+		$('.gallery').click(function(){
+			$('.galleryContent').show();
+			$('.JoinNow').hide();
+		});
+			$('#myTabs a').click(function (e) {
+			  e.preventDefault()
+			  $(this).tab('show')
+			});
+	</script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$('form.material').materialForm(); // Apply material
+			$('form').validate({ 
+				errorPlacement: function(error, element) {}
+			}); // Apply validator with no error messages but classes only
+			});
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

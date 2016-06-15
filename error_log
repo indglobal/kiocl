@@ -1,0 +1,52 @@
+[04-Jun-2015 03:44:06 America/New_York] PHP Fatal error:  Call to undefined method Admin_model::get_unit() in /home/herbaldi/public_html/iti/application/controllers/admin.php on line 232
+[04-Jun-2015 03:49:10 America/New_York] PHP Fatal error:  Call to undefined method Admin_model::storedepartments() in /home/herbaldi/public_html/iti/application/controllers/admin.php on line 220
+[09-Jun-2015 01:57:26 America/New_York] PHP Fatal error:  Cannot redeclare Admin_model::deleteunit() in /home/herbaldi/public_html/iti/application/models/admin_model.php on line 98
+[09-Jun-2015 02:10:54 America/New_York] PHP Fatal error:  Cannot redeclare Admin_model::getdepartments() in /home/herbaldi/public_html/iti/application/models/admin_model.php on line 109
+[22-Jun-2015 03:02:55 America/New_York] PHP Fatal error:  Call to a member function validate() on a non-object in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 42
+[06-Jul-2015 01:34:40 America/New_York] PHP Fatal error:  Call to undefined method Admin_umodel::gettender() in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 21
+[10-Jul-2015 02:14:01 America/New_York] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 132
+[10-Jul-2015 02:14:46 America/New_York] PHP Fatal error:  Call to a member function getunittendor() on a non-object in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 156
+[10-Jul-2015 03:24:12 America/New_York] PHP Fatal error:  Call to undefined method Admin_model::store_tender() in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 142
+[10-Jul-2015 03:26:08 America/New_York] PHP Fatal error:  Call to undefined method Admin_model::store_tender() in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 142
+[10-Jul-2015 03:27:21 America/New_York] PHP Fatal error:  Call to undefined method Admin_model::store_tender() in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 142
+[10-Jul-2015 04:31:00 America/New_York] PHP Parse error:  syntax error, unexpected '/' in /home/herbaldi/public_html/iti/application/views/units/dashboard.php on line 59
+[10-Jul-2015 05:58:43 America/New_York] PHP Fatal error:  Call to undefined function limit_text() in /home/herbaldi/public_html/iti/application/views/units/dashboard.php on line 54
+[10-Jul-2015 07:11:31 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/herbaldi/public_html/iti/application/views/units/dashboard.php on line 61
+[03-Aug-2015 03:29:29 America/New_York] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 79
+[03-Aug-2015 03:47:42 America/New_York] PHP Fatal error:  Cannot redeclare Admin_umodel::gettender() in /home/herbaldi/public_html/iti/application/models/admin_umodel.php on line 64
+[03-Aug-2015 06:12:02 America/New_York] PHP Fatal error:  Call to undefined method Admin_umodel::gettendor() in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 277
+[03-Aug-2015 06:24:09 America/New_York] PHP Parse error:  syntax error, unexpected ''date'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 251
+[04-Aug-2015 01:21:30 America/New_York] PHP Fatal error:  Call to undefined method Admin_umodel::store_contract() in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 363
+[04-Aug-2015 02:14:18 America/New_York] PHP Fatal error:  Call to undefined method Admin_model::getcontractDetails() in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 386
+[04-Aug-2015 02:45:04 America/New_York] PHP Parse error:  syntax error, unexpected '/' in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 449
+[04-Aug-2015 02:45:08 America/New_York] PHP Parse error:  syntax error, unexpected '/' in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 449
+[04-Aug-2015 02:45:41 America/New_York] PHP Fatal error:  Cannot use object of type stdClass as array in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 456
+[04-Aug-2015 02:46:26 America/New_York] PHP Fatal error:  Cannot use object of type stdClass as array in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 456
+[04-Aug-2015 02:47:09 America/New_York] PHP Fatal error:  Cannot use object of type stdClass as array in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 456
+[04-Aug-2015 02:47:14 America/New_York] PHP Fatal error:  Cannot use object of type stdClass as array in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 456
+[04-Aug-2015 02:48:10 America/New_York] PHP Fatal error:  Cannot use object of type stdClass as array in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 456
+[04-Aug-2015 02:50:15 America/New_York] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 456
+[05-Aug-2015 02:31:35 America/New_York] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/herbaldi/public_html/iti/application/controllers/user.php on line 22
+[05-Aug-2015 02:57:06 America/New_York] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/herbaldi/public_html/iti/application/views/index.php on line 115
+[05-Aug-2015 02:57:32 America/New_York] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/herbaldi/public_html/iti/application/views/index.php on line 115
+[10-Aug-2015 01:06:44 America/New_York] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 272
+[10-Aug-2015 02:29:28 America/New_York] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 272
+[10-Aug-2015 02:31:15 America/New_York] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 272
+[10-Aug-2015 02:35:01 America/New_York] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 272
+[10-Aug-2015 02:38:01 America/New_York] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 272
+[10-Aug-2015 02:38:18 America/New_York] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 272
+[10-Aug-2015 02:38:30 America/New_York] PHP Fatal error:  Call to a member function getUser() on a non-object in /home/herbaldi/public_html/iti/application/controllers/admin.php on line 21
+[10-Aug-2015 02:38:36 America/New_York] PHP Fatal error:  Call to a member function getUser() on a non-object in /home/herbaldi/public_html/iti/application/controllers/admin.php on line 21
+[10-Aug-2015 02:38:47 America/New_York] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 272
+[10-Aug-2015 02:38:56 America/New_York] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 272
+[10-Aug-2015 02:40:49 America/New_York] PHP Fatal error:  Call to a member function getUser() on a non-object in /home/herbaldi/public_html/iti/application/controllers/admin.php on line 21
+[10-Aug-2015 02:56:09 America/New_York] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 272
+[17-Aug-2015 03:09:02 America/New_York] PHP Fatal error:  Call to a member function getUser() on a non-object in /home/herbaldi/public_html/iti/application/controllers/admin.php on line 21
+[17-Aug-2015 03:10:41 America/New_York] PHP Fatal error:  Call to a member function getUser() on a non-object in /home/herbaldi/public_html/iti/application/controllers/admin.php on line 21
+[17-Aug-2015 03:10:54 America/New_York] PHP Fatal error:  Call to a member function getUser() on a non-object in /home/herbaldi/public_html/iti/application/controllers/admin.php on line 21
+[17-Aug-2015 03:11:48 America/New_York] PHP Fatal error:  Call to a member function getUser() on a non-object in /home/herbaldi/public_html/iti/application/controllers/admin.php on line 21
+[17-Aug-2015 03:13:15 America/New_York] PHP Fatal error:  Call to a member function getUser() on a non-object in /home/herbaldi/public_html/iti/application/controllers/admin.php on line 21
+[17-Aug-2015 03:18:31 America/New_York] PHP Parse error:  syntax error, unexpected 'SELECT' (T_STRING) in /home/herbaldi/public_html/iti/application/models/admin_umodel.php on line 49
+[27-Oct-2015 01:35:10 America/New_York] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 438
+[27-Oct-2015 01:48:56 America/New_York] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 438
+[27-Oct-2015 01:50:15 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/herbaldi/public_html/iti/application/controllers/unit.php on line 438

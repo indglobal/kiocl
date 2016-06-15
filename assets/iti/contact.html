@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+   <head>
+        <meta charset="UTF-8">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+        <title> ITI PVT LTD</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+        <meta content="Just another WordPress site" name="description">
+        <link rel="shortcut icon" href="http://ig1.in/govtiti1/wp-content/themes/xenia/favicon.ico" />
+
+       
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='css/settings.css' type='text/css' media='all' />
+<style type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='xenia-bootstrap-css'  href='css/bootstrap.min.css?ver=3.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-navstylechange-css'  href='css/navstylechange.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-cubeportfolio-css'  href='css/cubeportfolio-3.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-jcarousel-css'  href='css/jcarousel.responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-fontello-css'  href='css/fontello.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-fontawesome-css'  href='css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-main-css'  href='css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-bxslider-css'  href='css/jquery.bxslider.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-testimonialrotator-css'  href='css/testimonialrotator.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-responsive-css'  href='css/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-magnific-css'  href='css/magnific.css' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='css/js_composer.css' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_custom_css-css'  href='css/custom.css' type='text/css' media='screen' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var PhoenixTeam = {"THEME_SLUG":"xenia","ajaxUrl":"http:\/\/ig1.in\/govtiti1\/wp-admin\/admin-ajax.php","nonce":"4e2a516db2"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='js/jquery.themepunch.tools.min.js'></script>
+<script type='text/javascript' src='js/jquery.themepunch.revolution.min.js'></script>
+<script type='text/javascript' src='js/modernizr.custom.js'></script>
+
+
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				var ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = '598dab6503';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"http://ig1.in/govtiti1/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://ig1.in/govtiti1/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]--><style type="text/css" data-type="vc_custom-css">.page-in {
+  display: none;
+}
+.footer {
+  background: rgba(117, 134, 155, 1);
+  min-height: 150px;
+  max-height: 100%;
+  border-top: 1px solid #eee;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: -4px;
+  margin-top: 50px;
+  font-size: 13px;
+  color:#fff;
+}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1410123653091{margin-top: 74px !important;border-top-width: 1px !important;background-color: #ffffff !important;}.vc_custom_1410123686422{margin-bottom: 75px !important;}.vc_custom_1408480430787{margin-top: 75px !important;}.vc_custom_1409090512417{margin-bottom: -50px !important;}.vc_custom_1427982082909{margin-top: 75px !important;}.vc_custom_1410123664969{padding-top: 50px !important;padding-bottom: 35px !important;background-color: #ffffff !important;}.vc_custom_1429900520378{margin-bottom: 50px !important;}.vc_custom_1410109566045{margin-bottom: 50px !important;}</style>    </head>
+    <body class="page page-id-303 page-template page-template-template-page-php logged-in admin-bar no-customize-support contacts wpb-js-composer js-comp-ver-4.3.4 vc_responsive">
+
+    <div class="wrapper phoenix-wrapper-full">
+
+    <header>
+        <div class="top_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 pull-left general-font-area">
+                        <ul class="contact-top"><li><i class="icon-location"></i> ITI Bhavan, D.vaninagar, Blore-560016</li><li><i class="icon-mobile"></i> 080-25614466</li><li><i class="icon-mail"></i> d&#101;&#118;e&#108;&#111;per1&#54;&#64;&#73;&#110;&#100;g&#108;&#111;&#98;al&#46;&#99;&#111;m</li></ul>                    </div>
+                    <div class="col-lg-6 col-md-5 pull-right hidden-phone">
+                        <ul class="social-links">
+                            <li><a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li><li><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li><li><a href="http://pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li><li><a href="http://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li><li><a href="http://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li><li><a href="http://ig1.in/govtiti1/?feed=rss2" target="_blank"><i class="fa fa-rss"></i></a></li>                            <li id="search-btn"><a href="#"><i class="icon-search"></i></a></li>
+                        </ul>
+                        <div class="search-input" id="search-input" style="display: none;">
+                            <form role="search" method="get" id="searchform" class="searchform" action="http://ig1.in/govtiti1/" ><input id="s-input" name="s" type="text" placeholder="Search..." value="" /></form>                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page_head">
+        <div id="nav-container" class="nav-container" style="height: auto;">
+            <nav role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pull-left">
+                            <div class="logo">
+                                <a href="http://ig1.in/govtiti1"><img src="http://ig1.in/govtiti1/wp-content/uploads/2015/04/ITI.png" data-at2x="http://ig1.in/govtiti1/wp-content/uploads/2015/04/ITI.png" alt=""></a>                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6 pull-right">
+                            <div class="menu phoenix-menu-wrapper">
+                                                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                                    <div class="navbar-collapse collapse">
+                                        <div class="menu-footer-menu-container"><ul><li id="menu-item-567" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-567"><a href="#">Home</a></li>
+<li id="menu-item-568" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-568"><a href="#">About us</a></li>
+<li id="menu-item-569" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-569"><a href="#">Services &#038; Produts</a></li>
+<li id="menu-item-571" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-571"><a href="#">Marketing</a></li>
+<li id="menu-item-572" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-572"><a href="#">Vigilance</a></li>
+<li id="menu-item-573" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-573"><a href="#">Financial Information</a></li>
+<li id="menu-item-570" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-570"><a href="#">New &#038; Events</a></li>
+</ul></div>                                    </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+<div class="page-in"><div>              <div class="container">
+                <div class="row">
+
+                  <div class="col-lg-6 pull-left">
+                    <div class="page-in-name">
+Contacts: <span>Need Support? Get It!</span>                    </div>
+                  </div>
+<div class="col-lg-6 pull-right"><div class="page-in-bread"><span>You are here: </span><a href="http://ig1.in/govtiti1" title="Home Page">Home</a>  \  Contacts</div></div>                </div>
+              </div>
+            </div>
+        </div>
+    
+        <section class="post-303 page type-page status-publish hentry phoenix-sidebar-no">
+            <div id="page-303" class="begin-content">
+                <section>
+<div class="container-in-container"><div  class="vc_row wpb_row vc_row-fluid vc_custom_1409437002266">
+	<div class="vc_col-sm-12 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			<div class="phoenix-shortcode-promo-block vc_custom_1409439979122" style="margin-bottom: 15px;"><div class="promo-block" style="margin-bottom: 15px;"><div class="promo-text">Where Find Us?</div><div class="center-line"></div></div></div><div class="wpb_gmaps_widget wpb_content_element">
+		<div class="wpb_wrapper">
+		<div class="wpb_map_wraper">
+			<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="500" marginwidth="0" src="http://maps.google.ru/?ie=UTF8&amp;ll=42.376467,-71.063175&amp;spn=0.006967,0.016512&amp;t=m&amp;z=17&amp;output=embed"></iframe>		</div>
+	</div></div>
+		</div> 
+	</div> 
+</div></div><div class="container-in-container"><div  class="vc_row wpb_row vc_row-fluid vc_custom_1409440031373">
+	<div class="vc_col-sm-8 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			<div class="phoenix-shortcode-promo-block vc_custom_1409589911757" style="margin-bottom: 15px;"><div class="promo-block" style="margin-bottom: 15px;"><div class="promo-text">Contact Form</div><div class="center-line"></div></div></div><div class="xenia-shortcode-contact-form"><div class="widget widget_xenia-contact-form">        <div class="row">
+            <form action="http://ig1.in/govtiti1/wp-admin/admin-ajax.php" data-form="contactForm" method="post">
+                <div class="col-lg-4">
+                    <p class="text_cont"><input type="text" name="name" placeholder="Name" class="input-cont-textarea"></p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="text_cont"><input type="email" name="email" placeholder="E-mail" class="input-cont-textarea"></p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="text_cont"><input type="text" name="subject" placeholder="Subject" class="input-cont-textarea"></p>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="alert alert-danger error contact-form-error nameError"><i class="icon-cancel"></i> Oh snap! Name field can't stay empty.</div>
+                    <div class="alert alert-danger error contact-form-error emailError"><i class="icon-cancel"></i> Oh snap! There was a mistake when writing a e-mail.</div>
+                    <div class="alert alert-danger error contact-form-error subjectError"><i class="icon-cancel"></i> Oh snap! Subject field can't stay empty.</div>
+                </div>
+                    
+<!--                 <div class="col-lg-12">
+                    <p class="text_cont"><input type="file" name="attachment" class="input-cont-textarea"></p>
+                </div> -->
+
+                <div class="col-lg-12">
+                    <p class="text_cont"><textarea name="message" placeholder="Message" id="message" class="input-cont-textarea" cols="40" rows="10"></textarea></p>
+                    <div class="alert alert-danger error contact-form-error messageError"><i class="icon-cancel"></i> Oh snap! This field can't stay empty.</div>
+                    <div class="alert alert-danger error contact-form-fail messageError"><i class="icon-cancel"></i> Error. You message wasn't sent. Something wrong happen.</div>
+                    <div class="alert alert-success success contact-form-success"><i class="icon-ok"></i> Well done! You message is successfully sent.</div>
+                </div>
+                <div class="col-lg-12"><p><input type="submit" class="btn btn-default contact-form-send" value="Send message" /></p></div>
+            </form>
+        </div>
+</div></div>
+		</div> 
+	</div> 
+
+	<div class="vc_col-sm-4 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			<div class="phoenix-shortcode-promo-block vc_custom_1409590055287" style="margin-bottom: 15px;"><div class="promo-block" style="margin-bottom: 15px;"><div class="promo-text">Information</div><div class="center-line"></div></div></div><div class="xenia-shortcode-contact"><div class="widget widget_xenia-get-in-touch"><ul class="contact-footer contact-composer"><li><i class="icon-location"></i> Address: 455 Martinson, Los Angeles</li><li><i class="icon-mobile"></i> Phone: 8 (043) 567 - 89 - 30</li><li><i class="icon-inbox"></i> Fax: 8 (057) 149 - 24 - 64</li><li><i class="icon-videocam"></i> Skype: companyname</li><li><i class="icon-mail"></i> &#69;&#45;&#109;&#97;i&#108;: su&#112;port&#64;ema&#105;&#108;&#46;&#99;om</li><li><i class="icon-key"></i> Weekend: from 9 am to 6 pm</li></ul></div></div>
+		</div> 
+	</div> 
+</div></div>
+                </section>
+            </div>
+        </section>
+
+
+
+
+<!-- footer -->
+  <div class="footer general-font-area footer-bottom-top-section-present">
+
+
+    <div class="container">
+      <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+<div id="text-2" class="widget_text footer-widget"><h4 class="widget-title">Our brand ideas</h4>			<div class="textwidget"><p style="color:#fff !important;">Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.</p></div>
+		</div>            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+<div id="text-3" class="widget_text footer-widget"><h4 class="widget-title">Facilities</h4>			<div class="textwidget"><p style="color:#fff !important;">
+<a href="#">> PCB manufacturing facilities<a><br>
+<a href="#">> SMT Line<a><br>
+<a href="#">> Plastic Injection Technology<a><br>
+<a href="#">> Through-Hole Component Assembly<a><br>
+</p></div>
+		</div>            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+<div id="text-5" class="widget_text footer-widget"><h4 class="widget-title">Data Center</h4>			<div class="textwidget"><p style="color:#fff !important;">Orderwire secrecy: (OWS) Orderwire Secrecy encrypts and Decrypts Voice calls between operators on Radio. During alignment of Radio and setting up of the link the voice information is secured by this encryptor.</p></div>
+		</div>            </div>
+                </div>
+    </div>
+
+
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-ms-12 pull-left">
+            <div class="copyright">
+              <span style="color: #aebdc6; font-family: Arial, Arial, Tahoma, sans-serif; line-height: 21px; background-color: #5a7483;">© 2015 ITIL. All Rights Reserved.</span>            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-ms-12 pull-right">
+            <div class="foot_menu">
+            	<div class="menu-footer-menu-container"><ul><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-567"><a href="#">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-568"><a href="#">About us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-569"><a href="#">Services &#038; Produts</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-571"><a href="#">Marketing</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-572"><a href="#">Vigilance</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-573"><a href="#">Financial Information</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-570"><a href="#">New &#038; Events</a></li>
+</ul></div>            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /wrapper -->
+
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-includes/js/admin-bar.min.js?ver=3.9.3'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-includes/js/comment-reply.min.js?ver=3.9.3'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/sticky.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/bootstrap.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/jquery.bxslider.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/retina.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/jquery.cycle.all.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/jquery.parallax-1.1.3.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/jquery.cubeportfolio.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/jcarousel.responsive.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/jquery.jcarousel.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/magnific.popup.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/testimonialrotator.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/main.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/plugins/js_composer/assets/js/js_composer_front.js?ver=4.3.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Phoenix = {"THEME_SLUG":"xenia","Sending":"Sending...","fillAllFields":"Fill all form fields please","nonce":"76823e814b"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://ig1.in/govtiti1/wp-content/themes/xenia/assets/js/contacts.js?ver=1.0.0'></script>
+<script type="text/javascript">                                            </script>	<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+			request = true;
+
+			b[c] = b[c].replace( rcs, ' ' );
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+			<div id="wpadminbar" class="nojq nojs" role="navigation">
+			<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+			<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Top navigation toolbar." tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://ig1.in/govtiti1/wp-admin/about.php" title="About WordPress"><span class="ab-icon"></span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg"><a class="ab-item"  href="https://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation"><a class="ab-item"  href="http://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums"><a class="ab-item"  href="https://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback"><a class="ab-item"  href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://ig1.in/govtiti1/wp-admin/">ITI PVT LTD</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-dashboard"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/">Dashboard</a>		</li></ul><ul id="wp-admin-bar-appearance" class="ab-submenu">
+		<li id="wp-admin-bar-themes"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/themes.php">Themes</a>		</li>
+		<li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/customize.php?url=http%3A%2F%2Fig1.in%2Fgovtiti1%2F%3Fpage_id%3D303">Customize</a>		</li>
+		<li id="wp-admin-bar-widgets"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/widgets.php">Widgets</a>		</li>
+		<li id="wp-admin-bar-menus"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/nav-menus.php">Menus</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-updates"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/update-core.php" title="1 Plugin Update, 3 Theme Updates"><span class="ab-icon"></span><span class="ab-label">4</span><span class="screen-reader-text">1 Plugin Update, 3 Theme Updates</span></a>		</li>
+		<li id="wp-admin-bar-comments"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/edit-comments.php" title="0 comments awaiting moderation"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-0">0</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://ig1.in/govtiti1/wp-admin/post-new.php" title="Add New"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/post-new.php">Post</a>		</li>
+		<li id="wp-admin-bar-new-media"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/media-new.php">Media</a>		</li>
+		<li id="wp-admin-bar-new-page"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/post-new.php?post_type=page">Page</a>		</li>
+		<li id="wp-admin-bar-new-xenia_portfolio"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/post-new.php?post_type=xenia_portfolio">Portfolio Item</a>		</li>
+		<li id="wp-admin-bar-new-xenia_team"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/post-new.php?post_type=xenia_team">Team Member</a>		</li>
+		<li id="wp-admin-bar-new-xenia_services"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/post-new.php?post_type=xenia_services">Service</a>		</li>
+		<li id="wp-admin-bar-new-xenia_testimonials"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/post-new.php?post_type=xenia_testimonials">Testimonial</a>		</li>
+		<li id="wp-admin-bar-new-user"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/user-new.php">User</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-edit"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/post.php?post=303&#038;action=edit">Edit Page</a>		</li>
+		<li id="wp-admin-bar-xenia_support"><a class="ab-item"  href="http://themeforest.net/user/phoenixteam" target="_blank" title="Support">Xenia Support</a>		</li>
+		<li id="wp-admin-bar-vc_inline-admin-bar-link" class="vc_inline-link"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/edit.php?vc_action=vc_inline&#038;post_id=303&#038;post_type=page">Edit with Visual Composer</a>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://ig1.in/govtiti1/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><input type="submit" class="adminbar-button" value="Search"/></form></div>		</li>
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item"  aria-haspopup="true" href="http://ig1.in/govtiti1/wp-admin/profile.php" title="My Account">Howdy, govtiti<img alt='' src='http://1.gravatar.com/avatar/57eaae294896f62bc0573b604d8dc0f2?s=26&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D26&amp;r=G' class='avatar img_comm avatar-26 photo' height='26' width='26' /></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+		<li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://ig1.in/govtiti1/wp-admin/profile.php"><img alt='' src='http://1.gravatar.com/avatar/57eaae294896f62bc0573b604d8dc0f2?s=64&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D64&amp;r=G' class='avatar img_comm avatar-64 photo' height='64' width='64' /><span class='display-name'>govtiti</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-admin/profile.php">Edit My Profile</a>		</li>
+		<li id="wp-admin-bar-logout"><a class="ab-item"  href="http://ig1.in/govtiti1/wp-login.php?action=logout&#038;_wpnonce=6d358689f9">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://ig1.in/govtiti1/wp-login.php?action=logout&#038;_wpnonce=6d358689f9">Log Out</a>
+					</div>
+
+		
+	</body>
+</html>

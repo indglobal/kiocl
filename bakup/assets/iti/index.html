@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+        <title> ITI PVT LTD</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+        <meta content="Just another WordPress site" name="description">
+        <link rel="shortcut icon" href="http://ig1.in/govtiti1/wp-content/themes/xenia/favicon.ico" />
+
+       
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='css/settings.css' type='text/css' media='all' />
+<style type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='xenia-bootstrap-css'  href='css/bootstrap.min.css?ver=3.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-navstylechange-css'  href='css/navstylechange.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-cubeportfolio-css'  href='css/cubeportfolio-3.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-jcarousel-css'  href='css/jcarousel.responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-fontello-css'  href='css/fontello.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-fontawesome-css'  href='css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-main-css'  href='css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-bxslider-css'  href='css/jquery.bxslider.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-testimonialrotator-css'  href='css/testimonialrotator.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-responsive-css'  href='css/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='xenia-magnific-css'  href='css/magnific.css' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='css/js_composer.css' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_custom_css-css'  href='css/custom.css' type='text/css' media='screen' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var PhoenixTeam = {"THEME_SLUG":"xenia","ajaxUrl":"http:\/\/ig1.in\/govtiti1\/wp-admin\/admin-ajax.php","nonce":"4e2a516db2"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='js/jquery.themepunch.tools.min.js'></script>
+<script type='text/javascript' src='js/jquery.themepunch.revolution.min.js'></script>
+<script type='text/javascript' src='js/modernizr.custom.js'></script>
+
+
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				var ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = '598dab6503';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"http://ig1.in/govtiti1/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://ig1.in/govtiti1/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]--><style type="text/css" data-type="vc_custom-css">.page-in {
+  display: none;
+}
+.footer {
+  background: rgba(117, 134, 155, 1);
+  min-height: 150px;
+  max-height: 100%;
+  border-top: 1px solid #eee;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: -4px;
+  margin-top: 50px;
+  font-size: 13px;
+  color:#fff;
+}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1410123653091{margin-top: 74px !important;border-top-width: 1px !important;background-color: #ffffff !important;}.vc_custom_1410123686422{margin-bottom: 75px !important;}.vc_custom_1408480430787{margin-top: 75px !important;}.vc_custom_1409090512417{margin-bottom: -50px !important;}.vc_custom_1427982082909{margin-top: 75px !important;}.vc_custom_1410123664969{padding-top: 50px !important;padding-bottom: 35px !important;background-color: #ffffff !important;}.vc_custom_1429900520378{margin-bottom: 50px !important;}.vc_custom_1410109566045{margin-bottom: 50px !important;}</style>    </head>
+    <body class="home page page-id-434 page-template page-template-template-page-php home-industrial-layout wpb-js-composer js-comp-ver-4.3.4 vc_responsive">
+
+    <div class="wrapper phoenix-wrapper-full">
+
+    <header>
+        <div class="top_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 pull-left general-font-area">
+                        <ul class="contact-top"><li><i class="icon-location"></i> ITI Bhavan, D.vaninagar, Blore-560016</li><li><i class="icon-mobile"></i> 080-25614466</li><li><i class="icon-mail"></i> develop&#101;r16&#64;I&#110;&#100;&#103;lob&#97;l&#46;&#99;o&#109;</li></ul>                    </div>
+                    <div class="col-lg-6 col-md-5 pull-right hidden-phone">
+                        <ul class="social-links">
+                            <li><a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li><li><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li><li><a href="http://pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li><li><a href="http://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li><li><a href="http://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li><li><a href="http://ig1.in/govtiti1/?feed=rss2" target="_blank"><i class="fa fa-rss"></i></a></li>                            <li id="search-btn"><a href="#"><i class="icon-search"></i></a></li>
+                        </ul>
+                        <div class="search-input" id="search-input" style="display: none;">
+                            <form role="search" method="get" id="searchform" class="searchform" action="http://ig1.in/govtiti1/" ><input id="s-input" name="s" type="text" placeholder="Search..." value="" /></form>                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page_head">
+        <div id="nav-container" class="nav-container" style="height: auto;">
+            <nav role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pull-left">
+                            <div class="logo">
+                                <a href="http://ig1.in/govtiti1"><img src="http://ig1.in/govtiti1/wp-content/uploads/2015/04/ITI.png" data-at2x="http://ig1.in/govtiti1/wp-content/uploads/2015/04/ITI.png" alt=""></a>                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6 pull-right">
+                            <div class="menu phoenix-menu-wrapper">
+                                                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                                    <div class="navbar-collapse collapse">
+                                        <div class="menu-footer-menu-container"><ul><li id="menu-item-567" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-567"><a href="#">Home</a></li>
+<li id="menu-item-568" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-568"><a href="#">About us</a></li>
+<li id="menu-item-569" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-569"><a href="#">Services &#038; Produts</a></li>
+<li id="menu-item-571" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-571"><a href="#">Marketing</a></li>
+<li id="menu-item-572" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-572"><a href="#">Vigilance</a></li>
+<li id="menu-item-573" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-573"><a href="#">Financial Information</a></li>
+<li id="menu-item-570" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-570"><a href="#">New &#038; Events</a></li>
+</ul></div>                                    </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+<div class="page-in"><div>              <div class="container">
+                <div class="row">
+
+                  <div class="col-lg-6 pull-left">
+                    <div class="page-in-name">
+Home                    </div>
+                  </div>
+<div class="col-lg-6 pull-right"><div class="page-in-bread"><span>You are here: </span><a href="http://ig1.in/govtiti1" title="Home Page">Home</a>  \  Home</div></div>                </div>
+              </div>
+            </div>
+        </div>
+    
+        <section class="post-434 page type-page status-publish hentry phoenix-sidebar-no">
+            <div id="page-434" class="begin-content">
+                <section>
+<div class="container-fullwidth"><div  class="vc_row wpb_row vc_row-fluid">
+	<div class="vc_col-sm-12 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			<div class="wpb_revslider_element wpb_content_element">
+<div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#E9E9E9;padding:0px;margin-top:0px;margin-bottom:0px;max-height:570px;">
+<!-- START REVOLUTION SLIDER 4.6.5 fullwidth mode -->
+	<div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;max-height:570px;height:570px;">
+<ul>	<!-- SLIDE  -->
+	<li data-transition="random" data-slotamount="7"  data-saveperformance="off" >
+		<!-- MAIN IMAGE -->
+		<img src="http://ig1.in/govtiti1/wp-content/uploads/2015/04/2.jpg"  alt="2"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+		<!-- LAYERS -->
+	</li>
+	<!-- SLIDE  -->
+	<li data-transition="random" data-slotamount="7"  data-saveperformance="off" >
+		<!-- MAIN IMAGE -->
+		<img src="http://ig1.in/govtiti1/wp-content/uploads/2015/04/3.jpg"  alt="3"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+		<!-- LAYERS -->
+	</li>
+	<!-- SLIDE  -->
+	<li data-transition="random" data-slotamount="7"  data-saveperformance="off" >
+		<!-- MAIN IMAGE -->
+		<img src="http://ig1.in/govtiti1/wp-content/uploads/2015/04/1.jpg"  alt="1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+		<!-- LAYERS -->
+	</li>
+</ul>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+			
+
+			<style scoped></style>
+
+			<script type="text/javascript">
+
+				/******************************************
+					-	PREPARE PLACEHOLDER FOR SLIDER	-
+				******************************************/
+				
+
+				var setREVStartSize = function() {
+					var	tpopt = new Object();
+						tpopt.startwidth = 1660;
+						tpopt.startheight = 570;
+						tpopt.container = jQuery('#rev_slider_1_1');
+						tpopt.fullScreen = "off";
+						tpopt.forceFullWidth="on";
+
+					tpopt.container.closest(".rev_slider_wrapper").css({height:tpopt.container.height()});tpopt.width=parseInt(tpopt.container.width(),0);tpopt.height=parseInt(tpopt.container.height(),0);tpopt.bw=tpopt.width/tpopt.startwidth;tpopt.bh=tpopt.height/tpopt.startheight;if(tpopt.bh>tpopt.bw)tpopt.bh=tpopt.bw;if(tpopt.bh<tpopt.bw)tpopt.bw=tpopt.bh;if(tpopt.bw<tpopt.bh)tpopt.bh=tpopt.bw;if(tpopt.bh>1){tpopt.bw=1;tpopt.bh=1}if(tpopt.bw>1){tpopt.bw=1;tpopt.bh=1}tpopt.height=Math.round(tpopt.startheight*(tpopt.width/tpopt.startwidth));if(tpopt.height>tpopt.startheight&&tpopt.autoHeight!="on")tpopt.height=tpopt.startheight;if(tpopt.fullScreen=="on"){tpopt.height=tpopt.bw*tpopt.startheight;var cow=tpopt.container.parent().width();var coh=jQuery(window).height();if(tpopt.fullScreenOffsetContainer!=undefined){try{var offcontainers=tpopt.fullScreenOffsetContainer.split(",");jQuery.each(offcontainers,function(e,t){coh=coh-jQuery(t).outerHeight(true);if(coh<tpopt.minFullScreenHeight)coh=tpopt.minFullScreenHeight})}catch(e){}}tpopt.container.parent().height(coh);tpopt.container.height(coh);tpopt.container.closest(".rev_slider_wrapper").height(coh);tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(coh);tpopt.container.css({height:"100%"});tpopt.height=coh;}else{tpopt.container.height(tpopt.height);tpopt.container.closest(".rev_slider_wrapper").height(tpopt.height);tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(tpopt.height);}
+				};
+
+				/* CALL PLACEHOLDER */
+				setREVStartSize();
+
+
+				var tpj=jQuery;
+				tpj.noConflict();
+				var revapi1;
+
+				tpj(document).ready(function() {
+
+				if(tpj('#rev_slider_1_1').revolution == undefined){
+					revslider_showDoubleJqueryError('#rev_slider_1_1');
+				}else{
+				   revapi1 = tpj('#rev_slider_1_1').show().revolution(
+					{	
+												dottedOverlay:"none",
+						delay:9000,
+						startwidth:1660,
+						startheight:570,
+						hideThumbs:200,
+
+						thumbWidth:100,
+						thumbHeight:50,
+						thumbAmount:3,
+						
+												
+						simplifyAll:"off",
+
+						navigationType:"bullet",
+						navigationArrows:"solo",
+						navigationStyle:"round",
+
+						touchenabled:"on",
+						onHoverStop:"on",
+						nextSlideOnWindowFocus:"off",
+
+						swipe_threshold: 0.7,
+						swipe_min_touches: 1,
+						drag_block_vertical: false,
+						
+												
+												
+						keyboardNavigation:"off",
+
+						navigationHAlign:"center",
+						navigationVAlign:"bottom",
+						navigationHOffset:0,
+						navigationVOffset:20,
+
+						soloArrowLeftHalign:"left",
+						soloArrowLeftValign:"center",
+						soloArrowLeftHOffset:20,
+						soloArrowLeftVOffset:0,
+
+						soloArrowRightHalign:"right",
+						soloArrowRightValign:"center",
+						soloArrowRightHOffset:20,
+						soloArrowRightVOffset:0,
+
+						shadow:0,
+						fullWidth:"on",
+						fullScreen:"off",
+
+												spinner:"spinner0",
+												
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+
+						shuffle:"off",
+
+						autoHeight:"off",
+						forceFullWidth:"on",
+						
+						
+						hideTimerBar:"on",
+						hideThumbsOnMobile:"off",
+						hideNavDelayOnMobile:1500,
+						hideBulletsOnMobile:"on",
+						hideArrowsOnMobile:"on",
+						hideThumbsUnderResolution:0,
+
+												hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						startWithSlide:0					});
+
+
+
+									}
+				});	/*ready*/
+
+			</script>
+
+
+			</div><!-- END REVOLUTION SLIDER --></div>
+
+		</div> 
+	</div> 
+</div></div><div class="container-in-container"><div  class="vc_row wpb_row vc_row-fluid">
+	<div class="vc_col-sm-12 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			<div class="phoenix-shortcode-promo-block vc_custom_1427982082909" style="margin-bottom: 15px;"><div class="promo-block" style="margin-bottom: 15px;"><div class="promo-text">Services</div><div class="center-line"></div></div></div><div class="container-in-container"><div  class="vc_row wpb_row vc_row-fluid vc_inner">
+	<div class="vc_col-sm-3 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			
+                    <div class="hi-icon-effect"><div class="hi-icon fa icon-params"></div><div class="service-name">Powerful & Flexible</div>
+                        <div class="service-text">Standing Committee on Information Technology visits ITI Limited, </div>
+                    </div>
+		</div> 
+	</div> 
+
+	<div class="vc_col-sm-3 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			
+                    <div class="hi-icon-effect"><div class="hi-icon fa icon-calendar"></div><div class="service-name">Work On Time</div>
+                        <div class="service-text">Shri K.L.Dhingra, CMD, ITI Limited, conferred “Udyog Rattan” award</div>
+                    </div>
+		</div> 
+	</div> 
+
+	<div class="vc_col-sm-3 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			
+                    <div class="hi-icon-effect"><div class="hi-icon fa icon-key"></div><div class="service-name">Open Community</div>
+                        <div class="service-text">PSU Summit Award - Loss Reduction Through Cost Cutting</div>
+                    </div>
+		</div> 
+	</div> 
+
+	<div class="vc_col-sm-3 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			
+                    <div class="hi-icon-effect"><div class="hi-icon fa icon-globe"></div><div class="service-name">Premium Support</div>
+                        <div class="service-text">ITI celebrates World Telecommunication and Information Society day
+</div>
+                    </div>
+		</div> 
+	</div> 
+</div></div>
+		</div> 
+	</div> 
+</div></div><div class="container-fullwidth"><div  class="vc_row wpb_row vc_row-fluid vc_custom_1410123653091">
+	<div class="vc_col-sm-12 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			<div class="container-in-container"><div  class="vc_row wpb_row vc_row-fluid vc_custom_1410123664969 vc_inner">
+	<div class="vc_col-sm-12 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			<div class="phoenix-shortcode-promo-block" style="margin-bottom: 15px;"><div class="promo-block" style="margin-bottom: 15px;"><div class="promo-text">PRODUCTS</div><div class="center-line"></div></div></div>
+		</div> 
+	</div> 
+</div></div>
+		</div> 
+	</div> 
+</div></div><div class="container-fullwidth"><div  class="vc_row wpb_row vc_row-fluid vc_custom_1410123686422">
+	<div class="vc_col-sm-12 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			<script>portSetts = {inlineError: "Error! Please refresh the page!", moreLoading: "Loading...", moreNoMore: "No More Works"}; PhoenixTeam["queryVars"] = 'a:62:{s:9:"post_type";s:15:"xenia_portfolio";s:14:"posts_per_page";i:10;s:11:"post_status";s:7:"publish";s:5:"error";s:0:"";s:1:"m";s:0:"";s:1:"p";i:0;s:11:"post_parent";s:0:"";s:7:"subpost";s:0:"";s:10:"subpost_id";s:0:"";s:10:"attachment";s:0:"";s:13:"attachment_id";i:0;s:4:"name";s:0:"";s:6:"static";s:0:"";s:8:"pagename";s:0:"";s:7:"page_id";i:0;s:6:"second";s:0:"";s:6:"minute";s:0:"";s:4:"hour";s:0:"";s:3:"day";i:0;s:8:"monthnum";i:0;s:4:"year";i:0;s:1:"w";i:0;s:13:"category_name";s:0:"";s:3:"tag";s:0:"";s:3:"cat";s:0:"";s:6:"tag_id";s:0:"";s:6:"author";s:0:"";s:11:"author_name";s:0:"";s:4:"feed";s:0:"";s:2:"tb";s:0:"";s:5:"paged";i:0;s:14:"comments_popup";s:0:"";s:8:"meta_key";s:0:"";s:10:"meta_value";s:0:"";s:7:"preview";s:0:"";s:1:"s";s:0:"";s:8:"sentence";s:0:"";s:6:"fields";s:0:"";s:10:"menu_order";s:0:"";s:12:"category__in";a:0:{}s:16:"category__not_in";a:0:{}s:13:"category__and";a:0:{}s:8:"post__in";a:0:{}s:12:"post__not_in";a:0:{}s:7:"tag__in";a:0:{}s:11:"tag__not_in";a:0:{}s:8:"tag__and";a:0:{}s:12:"tag_slug__in";a:0:{}s:13:"tag_slug__and";a:0:{}s:15:"post_parent__in";a:0:{}s:19:"post_parent__not_in";a:0:{}s:10:"author__in";a:0:{}s:14:"author__not_in";a:0:{}s:19:"ignore_sticky_posts";b:0;s:16:"suppress_filters";b:0;s:13:"cache_results";b:1;s:22:"update_post_term_cache";b:1;s:22:"update_post_meta_cache";b:1;s:8:"nopaging";b:0;s:17:"comments_per_page";s:2:"50";s:13:"no_found_rows";b:0;s:5:"order";s:4:"DESC";}'; PhoenixTeam["currentPage"] = 1;</script> 
+<div class="phornix-shortcode-portfolio-grid"><div class="grid hover-3">
+                <div class="cbp-l-grid-projects" id="grid-container-portfolio">
+                    <ul><li class="cbp-item logo web-design ">
+                        <div class="portfolio-main">
+                            <figure><img src="http://ig1.in/govtiti1/wp-content/uploads/bfi_thumb/iti1-2ytp0b11zeuzl028g0llhm.jpg" alt="GSM/CDMA" /><figcaption>
+                        <h3>GSM/CDMA</h3>
+                        <span>GSM/CDMA</span>
+                            <a href="http://ig1.in/govtiti1/wp-content/uploads/2014/08/iti1.jpg" class="portfolio-attach cbp-lightbox" data-title="GSM/CDMA<br>by GSM/CDMA"><i class="icon-search"></i></a>
+                            <a href="http://ig1.in/govtiti1/wp-admin/admin-ajax.php?p=27" class="portfolio-search cbp-singlePageInline"><i class="icon-attach"></i></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </li><li class="cbp-item graphic web-design ">
+                        <div class="portfolio-main">
+                            <figure><img src="http://ig1.in/govtiti1/wp-content/uploads/bfi_thumb/iti2-2ytp0awj54bssybd25exvu.jpg" alt="Optical Trasmision" /><figcaption>
+                        <h3>Optical Trasmision</h3>
+                        <span>Optical Trasmision</span>
+                            <a href="http://ig1.in/govtiti1/wp-content/uploads/2014/08/iti2.jpg" class="portfolio-attach cbp-lightbox" data-title="Optical Trasmision<br>by Optical Trasmision"><i class="icon-search"></i></a>
+                            <a href="http://ig1.in/govtiti1/wp-admin/admin-ajax.php?p=26" class="portfolio-search cbp-singlePageInline"><i class="icon-attach"></i></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </li><li class="cbp-item html-css promo ">
+                        <div class="portfolio-main">
+                            <figure><img src="http://ig1.in/govtiti1/wp-content/uploads/bfi_thumb/iti31-2ytp1hr02w30hhunejgj62.jpg" alt="MLLN" /><figcaption>
+                        <h3>MLLN</h3>
+                        <span>MLLN</span>
+                            <a href="http://ig1.in/govtiti1/wp-content/uploads/2014/08/iti31.jpg" class="portfolio-attach cbp-lightbox" data-title="MLLN<br>by MLLN"><i class="icon-search"></i></a>
+                            <a href="http://ig1.in/govtiti1/wp-admin/admin-ajax.php?p=48" class="portfolio-search cbp-singlePageInline"><i class="icon-attach"></i></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="button-center"><a href="#" class="btn-simple cbp-l-loadMore-button-link">Load Full Portfolio</a></div>
+                    </div>
+                </div>
+            </div>
+		</div> 
+	</div> 
+</div></div><div class="container-fullwidth"><div  class="vc_row wpb_row vc_row-fluid">
+	<div class="vc_col-sm-12 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			<div class="prl-1">
+                <div class="prlx">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12 marg50"><div class="quote"><i class="fa fa-quote-right"></i></div></div>
+                        <div class="col-lg-12">
+                          <div class="testimonials">
+                            <div id="carousel-testimonials-0" class="carousel slide"><ol class="carousel-indicators"><li data-target="#carousel-testimonials-0" data-slide-to="0" class="active"></li><li data-target="#carousel-testimonials-0" data-slide-to="1"></li><li data-target="#carousel-testimonials-0" data-slide-to="2"></li><li data-target="#carousel-testimonials-0" data-slide-to="3"></li></ol><div class="carousel-inner"><div class="item active"><p class="testimonial-quote">ITI signs MoU with Department of Telecommunications</p>
+<p class="testimonial-author">Shri K.L.Dhingra</p>
+</div><div class="item"><p class="testimonial-quote">Shri K.L.Dhingra, CMD, ITI Limited, conferred “Udyog Rattan” award</p>
+<p class="testimonial-author">Shri K.L.Dhingra</p>
+</div><div class="item"><p class="testimonial-quote">Shri K.L.Dhingra, CMD, ITI Limited, honoured with “Udyog Ratan” award</p>
+<p class="testimonial-author">Shri K.L.Dhingra</p>
+</div><div class="item"><p class="testimonial-quote">ITI CMD elected as Chief Co-ordinator of Southern Chapter of SCOPE</p>
+<p class="testimonial-author">ITI CMD</p>
+</div></div>
+                                <a class="left carousel-control" href="#carousel-testimonials-0" data-slide="prev">&lsaquo;</a>
+                                <a class="right carousel-control" href="#carousel-testimonials-0" data-slide="next">&rsaquo;</a>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+		</div> 
+	</div> 
+</div></div><div class="container-in-container"><div  class="vc_row wpb_row vc_row-fluid vc_custom_1408480430787">
+	<div class="vc_col-sm-6 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			<div class="phoenix-shortcode-promo-block vc_custom_1429900520378" style="margin-bottom: 15px;"><div class="promo-block" style="margin-bottom: 15px;"><div class="promo-text">About ITI LTD</div><div class="center-line"></div></div></div>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p><span style="color: #505050;">India’s first Public Sector Unit (PSU) &#8211; ITI Ltd was established in 1948. Ever since, as a pioneering venture in the field of telecommunications, it has contributed to 50% of the present national telecom network. With state-of-the-art manufacturing facilities spread across six locations and a countrywide network of marketing/service outlets, the company offers a complete range of telecom products and total solutions covering the whole spectrum of Switching, Transmission, Access and Subscriber Premises equipment.</span></p>
+
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+
+	<div class="vc_col-sm-6 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			<div class="phoenix-shortcode-promo-block vc_custom_1410109566045" style="margin-bottom: 15px;"><div class="promo-block" style="margin-bottom: 15px;"><div class="promo-text">Testimonials</div><div class="center-line"></div></div></div><div class="phoenix-shortcode-testimonials">
+<div class="testimonialrotator skin_default" id="phoenix-tr-1">
+<div class="testimonial-tobe">
+<div class="testtext" style="border:none">ITI signs MoU with Department of Telecommunications</div>
+
+<div class="testauthor-img"><img src="http://ig1.in/govtiti1/wp-content/uploads/2015/04/kldingra_12-06-2014-150x150.jpg" alt="John Doe"></div>
+
+<div class="testauthor">Shri K.L.Dhingra</div>
+
+<div class="testauthor-desc">MOU</div>
+
+<div class="testauthor-rating"><ul>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+</ul></div>
+
+</div>
+<div class="testimonial-tobe">
+<div class="testtext" style="border:none">Shri K.L.Dhingra, CMD, ITI Limited, conferred “Udyog Rattan” award</div>
+
+<div class="testauthor-img"><img src="http://ig1.in/govtiti1/wp-content/uploads/2015/04/Telecom-day-2014-1_27-05-2014-150x150.jpg" alt="Mila Markovna"></div>
+
+<div class="testauthor">Shri K.L.Dhingra</div>
+
+<div class="testauthor-desc">Apple Inc.</div>
+
+<div class="testauthor-rating"><ul>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+</ul></div>
+
+</div>
+<div class="testimonial-tobe">
+<div class="testtext" style="border:none">Shri K.L.Dhingra, CMD, ITI Limited, honoured with “Udyog Ratan” award</div>
+
+<div class="testauthor-img"><img src="http://ig1.in/govtiti1/wp-content/uploads/2015/04/kldingra_12-06-20141-150x150.jpg" alt="Gustav Holtz"></div>
+
+<div class="testauthor">Shri K.L.Dhingra</div>
+
+<div class="testauthor-desc">Shri K.L.Dhingra</div>
+
+<div class="testauthor-rating"><ul>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+</ul></div>
+
+</div>
+<div class="testimonial-tobe">
+<div class="testtext" style="border:none">ITI CMD elected as Chief Co-ordinator of Southern Chapter of SCOPE</div>
+
+<div class="testauthor-img"><img src="http://ig1.in/govtiti1/wp-content/uploads/2015/04/Republic-day-2014-1-150x150.jpg" alt="Julia Romer"></div>
+
+<div class="testauthor">ITI CMD</div>
+
+<div class="testauthor-desc">ITI CMD</div>
+
+<div class="testauthor-rating"><ul>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+</ul></div>
+
+</div>
+</div>
+</div>
+
+		</div> 
+	</div> 
+</div></div><div class="container-fullwidth"><div  class="vc_row wpb_row vc_row-fluid vc_custom_1409090512417">
+	<div class="vc_col-sm-12 wpb_column vc_column_container">
+		<div class="wpb_wrapper">
+			<div class="xenia-shortcode-twitter-feed"><div class="prl-3 marg50 phoenix-twitter-slider-wrapper">
+            <div class="prlx-3">
+              <div class="container marg75">
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 col-ms-12">
+                  <div class="twit-icon"><i class="fa fa-twitter"></i></div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-11 col-ms-12"><div id="xenia-twitter-1" class="widget widget_xenia-twitter"><ul class="tweet_list"><li><span class="content">Check out &#039;Xenia - Refined WordPress Corporate Theme&#039; on @EnvatoMarket by @Ph0enixTeam #themeforest <a href="http://t.co/hTg4WaQ2IO" rel="nofollow" target='_blank' rel='external'>http://t.co/hTg4WaQ2IO</a></span></li><li><span class="content">Check out this great #themeforest item &#039;Material - Premium Magazine WordPress Theme&#039; <a href="http://t.co/kcQV7C8whB" rel="nofollow" target='_blank' rel='external'>http://t.co/kcQV7C8whB</a></span></li><li><span class="content">#ProStore and #Planer is available again in #themeforest :)</span></li></ul></div></div><div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+                          <div class="paginat">
+                              <a id="prev">&lsaquo;</a>
+                              <a id="next">&rsaquo;</a>
+                          </div>
+                      </div></div></div></div></div>
+		</div> 
+	</div> 
+</div></div>
+                </section>
+            </div>
+        </section>
+
+
+
+
+<!-- footer -->
+  <div class="footer general-font-area footer-bottom-top-section-present">
+
+
+    <div class="container">
+      <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+<div id="text-2" class="widget_text footer-widget"><h4 class="widget-title">Our brand ideas</h4>			<div class="textwidget"><p style="color:#fff !important;">Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.</p></div>
+		</div>            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+<div id="text-3" class="widget_text footer-widget"><h4 class="widget-title">Facilities</h4>			<div class="textwidget"><p style="color:#fff !important;">
+<a href="#">> PCB manufacturing facilities<a><br>
+<a href="#">> SMT Line<a><br>
+<a href="#">> Plastic Injection Technology<a><br>
+<a href="#">> Through-Hole Component Assembly<a><br>
+</p></div>
+		</div>            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+<div id="text-5" class="widget_text footer-widget"><h4 class="widget-title">Data Center</h4>			<div class="textwidget"><p style="color:#fff !important;">Orderwire secrecy: (OWS) Orderwire Secrecy encrypts and Decrypts Voice calls between operators on Radio. During alignment of Radio and setting up of the link the voice information is secured by this encryptor.</p></div>
+		</div>            </div>
+                </div>
+    </div>
+
+
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-ms-12 pull-left">
+            <div class="copyright">
+              <span style="color: #aebdc6; font-family: Arial, Arial, Tahoma, sans-serif; line-height: 21px; background-color: #5a7483;">© 2015 ITIL. All Rights Reserved.</span>            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-ms-12 pull-right">
+            <div class="foot_menu">
+            	<div class="menu-footer-menu-container"><ul><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-567"><a href="#">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-568"><a href="#">About us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-569"><a href="#">Services &#038; Produts</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-571"><a href="#">Marketing</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-572"><a href="#">Vigilance</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-573"><a href="#">Financial Information</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-570"><a href="#">New &#038; Events</a></li>
+</ul></div>            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /wrapper -->
+
+<script type='text/javascript' src='js/comment-reply.min.js'></script>
+<script type='text/javascript' src='js/sticky.js'></script>
+<script type='text/javascript' src='js/bootstrap.min.js'></script>
+<script type='text/javascript' src='js/jquery.bxslider.min.js'></script>
+<script type='text/javascript' src='js/retina.min.js'></script>
+<script type='text/javascript' src='js/jquery.cycle.all.js'></script>
+<script type='text/javascript' src='js/jquery.parallax-1.1.3.js'></script>
+<script type='text/javascript' src='js/jquery.cubeportfolio.min.js'></script>
+<script type='text/javascript' src='js/jcarousel.responsive.js'></script>
+<script type='text/javascript' src='js/jquery.jcarousel.min.js'></script>
+<script type='text/javascript' src='js/magnific.popup.min.js'></script>
+<script type='text/javascript' src='js/testimonialrotator.js'></script>
+<script type='text/javascript' src='js/main.js'></script>
+<script type='text/javascript' src='js/js_composer_front.js'></script>
+<script type='text/javascript' src='js/portfolio-3.js'></script>
+<script type="text/javascript">                                            </script>
+	</body>
+</html>
